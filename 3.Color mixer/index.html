@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Mixer</title>
+  </head>
+  <body>
+    <h1>Color Mixer</h1>
+
+    <label for="colorOne">Add Color One :</label>
+    <input type="text" id="colorOne" />
+    <br />
+    <br />
+
+    <label for="colorTwo">Add Color Two :</label>
+    <input type="text" id="colorTwo" />
+
+    <br />
+    <br />
+    <button class="submit">Print Resulting Color</button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const printColorButton = document.querySelector(".submit");
+
+      function resultingColor() {
+        const colorOne = document.querySelector("#colorOne").value;
+        const colorTwo = document.querySelector("#colorTwo").value;
+        let result;
+
+        switch (colorOne) {
+          /* CASE RED */
+          case "red":
+            switch (colorTwo) {
+              case "blue":
+                result = "purple";
+                break;
+              case "yellow":
+                result = "orange";
+                break;
+              default:
+                result = "Invalid color combination";
+                break;
+            }
+            break;
+          /* CASE BLUE */
+          case "blue":
+            switch (colorTwo) {
+              case "red":
+                result = "purple";
+                break;
+              case "yellow":
+                result = "green";
+                break;
+              default:
+                result = "Invalid color combination";
+                break;
+            }
+            break;
+          /* CASE YELLOW */
+          case "yellow":
+            switch (colorTwo) {
+              case "red":
+                result = "orange";
+                break;
+              case "blue":
+                result = "green";
+                break;
+              default:
+                result = "Invalid color combination";
+                break;
+            }
+            break;
+          /* DEFAULT CASE */
+          default:
+            result = "Invalid color combination";
+            break;
+        }
+        alert(result);
+      }
+
+      printColorButton.addEventListener("click", resultingColor);
+    </script>
+  </body>
+</html>
