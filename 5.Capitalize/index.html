@@ -7,7 +7,7 @@
     <title>Capitalize</title>
   </head>
   <body>
-    <h1>Capitaliized first letters</h1>
+    <h1>Capitalized first letters</h1>
 
     <form>
       <label for="enter-first-name">Enter your first name:</label>
@@ -46,9 +46,8 @@
           return lastName[0] === lastName[0].toLowerCase()
             ? lastName.charAt(0).toUpperCase() + lastName.slice(1)
             : lastName;
-
-          alert(`Hello ${capitalizeFirstName()} ${capitalizeLastName()}`);
         }
+        alert(`Hello ${capitalizeFirstName()} ${capitalizeLastName()}`);
       }
 
       submitButton.addEventListener("click", function (event) {

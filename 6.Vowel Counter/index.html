@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel Counter</title>
+  </head>
+  <body>
+    <h1>Vowel Counter</h1>
+
+    <div>
+      <label for="enter-name">Enter your Name: </label>
+      <input type="text" id="enter-name" />
+
+      <br />
+      <br />
+      <input type="submit" class="button" />
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const submitButton = document.querySelector(".button");
+
+      function checkVowels() {
+        let userName = document.querySelector("#enter-name").value;
+        let vowels = 0;
+
+        for (let i = 0; i < userName.length; i++) {
+          let charName = userName[i];
+          if (
+            charName == "a" ||
+            charName == "e" ||
+            charName == "i" ||
+            charName == "o" ||
+            charName == "u"
+          ) {
+            vowels += 1;
+          }
+        }
+        alert(vowels);
+      }
+
+      submitButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        checkVowels();
+      });
+    </script>
+  </body>
+</html>
