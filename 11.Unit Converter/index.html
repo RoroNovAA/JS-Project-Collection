@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Unit Converter</title>
+  </head>
+  <body>
+    <!-- JAVASCRIPT -->
+    <script>
+      /* CELSIUS TO FAHRENHEIT FUNCTION */
+      function celsiusToFahrenheit(data) {
+        let fahrenheit = undefined;
+        /* MATHEMATICALLY CONVERTING THE C TO F */
+        fahrenheit = data * 1.8 + 32;
+        return fahrenheit;
+      }
+
+      celsiusToFahrenheit(20);
+      /* CONSOLE LOG TO SEE THE RESULT */
+      console.log(celsiusToFahrenheit(20));
+      console.log(celsiusToFahrenheit(12));
+    </script>
+  </body>
+</html>
