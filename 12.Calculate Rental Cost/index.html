@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Rental Costs</title>
+  </head>
+  <body>
+    <h1>Calculate Rental Costs</h1>
+    <div>
+      <label for="num-of-days">Number of Days Rented:</label>
+      <input type="number" id="num-of-days" class="num-of-days" />
+
+      <br />
+      <br />
+      <label for="type-of-car">Type of Car Rented:</label>
+      <input type="text" id="type-of-car" class="type-of-car" />
+
+      <br />
+      <br />
+      <div>
+        <button>Get Rental Cost</button>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const submitButton = document.querySelector("button");
+
+      function getRentalCost() {
+        let NumOfDays = document.querySelector("#num-of-days").value;
+        let typeOfCar = document.querySelector("#type-of-car").value;
+      }
+
+      submitButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        getRentalCost();
+      });
+    </script>
+  </body>
+</html>
