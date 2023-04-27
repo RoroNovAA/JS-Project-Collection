@@ -1,6 +1,6 @@
 # PWSKILLS-Milestone-exam
-In this assignment project I have worked on 25 Javascript projects which helped me understand JS much better and how to implement it.
-Given below is the deatils of the corresponding projects :
+In this assignment project I have worked on 25 Javascript projects which helped me understand JavaScript much better and to implement it.
+Given below is the details of the corresponding projects :
 
 1. Password Validator
 Write a JavaScript program that checks if the entered password matches the confirmed password. If the
