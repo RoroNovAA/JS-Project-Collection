@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Banking Application</title>
+</head>
+<body>
+    
+    <!-- JAVASCRIPT -->
+    <script>
+        /* OBJECT WITH DEPOSIT & WITHDRAW OBJECT METHOD */
+        const userDetails = {
+            name: "John doe",
+            balance: 25000,
+            moneyDeposit: function(amount){
+                return this.balance += amount;
+            },
+            moneyWithdraw: function(amount){
+                return this.balance -= amount;
+            }
+        }
+
+        /* CALLING THE METHOD */
+        console.log(userDetails.balance);
+        console.log(userDetails.moneyDeposit(5000));
+        console.log(userDetails.moneyWithdraw(25000));
+        console.log(userDetails.balance)
+
+    </script>
+</body>
+</html>
