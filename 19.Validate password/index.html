@@ -11,15 +11,15 @@
 <body>
         <form>
             <label for="enter-email">Enter your email id:</label>
-            <input type="text" id="enter-email" value="@">
+            <input type="text" id="enter-email" placeholder="abc@gmail.com">
 
             <label for="enter-psw">Enter your Password:</label>
-            <input type="text" id="enter-psw" minlength="8">
+            <input type="password" id="enter-psw">
 
             <button class="submit-button">Submit</button>
         </form>
 
-        <div>
+        <div class="eror-message-container">
             <p class="error-message"></p>
         </div>
 
@@ -28,6 +28,21 @@
             const submitButton = document.querySelector("submit-button");
             const errorMessage = document.querySelector(".error-message");
 
+             function validateForm() {
+                let emailField = document.querySelector("#enter-email").value;
+                let pswdField = document.querySelector("enter-psw").value;
+
+                if(emailField.includes("@") && pswdField.length => 8) {
+                    errorMessage.innerText = "Valid email and password!";
+                } else {
+                    errorMessage.innerText = "Invalid email or password!";
+                }
+            }
+
+            submitButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                validateForm();
+            }); 
 
         </script>
 </body>
