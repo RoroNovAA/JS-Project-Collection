@@ -38,11 +38,6 @@
                 : "<span style='color:red;'> Invalid email or password! </span>";
             }
 
-            /* ADDING COLORS */
-            if(errorMessage.innerText === "Valid email and passwor!") {
-                document.errorMessage.Color = "green";
-            }
-
             /* EVENT LISTENER */
             submitButton.addEventListener("click", function(event) {
                 event.preventDefault();
