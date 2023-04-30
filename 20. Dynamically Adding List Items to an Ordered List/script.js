@@ -1,4 +1,5 @@
 
+ /* WHAT YOU WILL LEARN DATA IN AN ARRAY */
 const data = ["HTML and Semantics",
     "Starting with CSS",
     "Working Template",
@@ -19,15 +20,17 @@ const data = ["HTML and Semantics",
     "Starting and Completing Full Fledge Projects"];
 
 
+/* VARIABLES */
 const addButton = document.querySelector("button");
 let i = 0;
-   function addItems() {
-      
-        let list = document.querySelector(".list-address");
-        return list.innerHTML += `<li> ${data[i]} </li>`;
-   }
 
-addButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    addItems();
-});
+   /* MAIN FUNCTION */
+   function addItems() { 
+       if(data[i] !== undefined) {
+        let list = document.querySelector(".list-address");
+        list.innerHTML += `<li> ${data[i]} </li>`;
+        i++;
+       } else {
+        alert("All items are added!");
+       }
+   };
