@@ -25,18 +25,22 @@
 
         <!-- JAVASCRIPT -->
         <script>
-            const submitButton = document.querySelector("submit-button");
+            const submitButton = document.querySelector(".submit-button");
             const errorMessage = document.querySelector(".error-message");
 
              function validateForm() {
                 let emailField = document.querySelector("#enter-email").value;
                 let pswdField = document.querySelector("#enter-psw").value;
 
-                if(emailField.includes("@") /* && pswdField.length => 8 */) {
-                    errorMessage.innerHTML = "Valid email and password!";
+                emailField.includes("@") && pswdField.length => 8 
+                ? errorMessage.innerHTML = "Valid email and password!" 
+                : "Invalid email or password!";
+
+               /*  if(emailField.includes("@") */ /* && pswdField.length => 8 *//* ) { */
+               /*      errorMessage.innerHTML = "Valid email and password!";
                 } else {
                     errorMessage.innerHTML = "Invalid email or password!";
-                }
+                } */
             }
 
             submitButton.addEventListener("click", function(event) {
