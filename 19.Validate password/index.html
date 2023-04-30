@@ -30,12 +30,12 @@
 
              function validateForm() {
                 let emailField = document.querySelector("#enter-email").value;
-                let pswdField = document.querySelector("enter-psw").value;
+                let pswdField = document.querySelector("#enter-psw").value;
 
-                if(emailField.includes("@") && pswdField.length => 8) {
-                    errorMessage.innerText = "Valid email and password!";
+                if(emailField.includes("@") /* && pswdField.length => 8 */) {
+                    errorMessage.innerHTML = "Valid email and password!";
                 } else {
-                    errorMessage.innerText = "Invalid email or password!";
+                    errorMessage.innerHTML = "Invalid email or password!";
                 }
             }
 
