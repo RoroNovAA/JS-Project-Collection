@@ -14,7 +14,7 @@
             <input type="text" id="enter-email" placeholder="abc@gmail.com">
 
             <label for="enter-psw">Enter your Password:</label>
-            <input type="password" id="enter-psw">
+            <input type="password" id="enter-psw" placeholder="enter 8 or more char password">
 
             <button class="submit-button">Submit</button>
         </form>
@@ -28,21 +28,22 @@
             const submitButton = document.querySelector(".submit-button");
             const errorMessage = document.querySelector(".error-message");
 
+            /* MAIN FUNCTION */
              function validateForm() {
                 let emailField = document.querySelector("#enter-email").value;
                 let pswdField = document.querySelector("#enter-psw").value;
 
-                emailField.includes("@") && pswdField.length => 8 
-                ? errorMessage.innerHTML = "Valid email and password!" 
-                : "Invalid email or password!";
-
-               /*  if(emailField.includes("@") */ /* && pswdField.length => 8 *//* ) { */
-               /*      errorMessage.innerHTML = "Valid email and password!";
-                } else {
-                    errorMessage.innerHTML = "Invalid email or password!";
-                } */
+                errorMessage.innerHTML = emailField.includes("@") && pswdField.length >= 8 
+                ? "<span style='color:green;'> Valid email and password! </span>"
+                : "<span style='color:red;'> Invalid email or password! </span>";
             }
 
+            /* ADDING COLORS */
+            if(errorMessage.innerText === "Valid email and passwor!") {
+                document.errorMessage.Color = "green";
+            }
+
+            /* EVENT LISTENER */
             submitButton.addEventListener("click", function(event) {
                 event.preventDefault();
                 validateForm();
