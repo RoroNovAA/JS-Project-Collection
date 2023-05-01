@@ -76,3 +76,85 @@ it on its website. They want a function that can convert Celsius to Fahrenheit a
 function should take input in Celsius and return output in Fahrenheit. This function will help the weather station
 to provide temperature readings that are easily understandable to a wider audience.
 
+12. Calculate rental cost
+A car rental company needs to calculate the cost of a rental based on the number of days rented and the type
+of car. They require a function that takes in the number of days rented and car type and returns the rental cost.
+The total cost would be the rental cost multiplied by the number of days rented.
+The rental costs arc
+* Economy = Rs. 4000 /- per day.
+* Midsize = Rs. 10,000 /- per day.
+* Luxury = Rs. 20,000 /- per day.
+
+13. Bill splitter
+A restaurant wants to calculate the total bill for a table based on the cost of each dish and the number of
+people sharing it. They require a function that takes in the cost of each dish and the number of people sharing
+it and returns an object that contains the total bill and the bill to be paid by each person in the group.
+
+14. Calculate the final order price
+A retail store needs to calculate the total cost of items in a customer's cart. A customer cart is an array of
+objects with unit price and quantity. Implement an arrow function to calculate the total cost of items, based on
+the unit price and quantity of each item.
+
+15. Calculate the percentage of the discount
+A retail store is offering a discount on its products and wants to calculate the percentage of the discount to
+show customers how much they can save. Given the original price and the discounted price of a product,
+implement an arrow function to calculate the percentage of the discount rounded off to two decimal places.
+This function could be useful for the store's marketing team to create promotions and offers that attract
+customers.
+
+16. Generate a random number
+Create a JavaScript program that generates a random number between 1 and 100 when the program starts.
+Use a self-invoking arrow function to generate the random number. This program can be used as a component
+in various games or applications that require a random number generator.
+
+17. Build a banking application
+A banking application needs to manage customer accounts and transactions. The user detail is stored in an
+object with a keys name and balance. Write functions using object methods to update a customer's account
+balance based on a deposit or withdrawal.
+
+18. Change Text on Button click.
+Create a simple HTML page with a heading and a button. The initial text must be “The most affordable learning
+platform”, use JavaScript to change the heading text to “PW Skills” when the button is clicked. The button must
+toggle the text of a heading between "The most affordable learning platform" and "PW Skills" on each click.
+
+19. Validate Password
+You are building a login form for a website and need to validate user input using JavaScript. The form has two
+input fields: email and password, and a submit button.
+Your task is to implement JavaScript code that validates the email and password input fields. The email field
+should contain the "@" symbol. The password field should have a minimum length of 8 characters. If either of
+these conditions is not met, an error message “Invalid email or password!” should be displayed in red color as a
+paragraph text below the form. If the password is valid the message “Valid email and password!” must be
+displayed in green color as a paragraph text below the form.
+Your code should run when the user clicks the submit button and should prevent the form from submitting if
+the input is invalid. The input type of email must be text and the input type of password must be password
+without any minLength attribute specified.
+
+20. Dynamically Adding List Items to an Ordered List
+Visit page and look for “What you'll learn” section.
+The section consists of a list of information on what you will be learning in the course. You are required to write
+a JavaScript program that stores a pre-existing array of list items. On each button click, the program should
+add a new list item in sequential order. The program should verify if any remaining items are available in the list
+item array and add the next item to the list accordingly. If no items are left, the function should display a
+message indicating that all items have been added.
+
+21. TODO App
+Create a simple to-do app to add TODO items to the list through an input field and a button.
+
+22. Progress Bar
+Create a progress bar that fills up as the user scrolls down the page.
+
+23. Change the color on click
+Create a button that utilizes an array of colors and the Math.random method to change the background color
+of the page upon clicking.
+
+24. Text Highlighting
+Using the Document Object Model (DOM), highlight all words in a paragraph element that are greater than 8
+characters. The highlighted words should be with a yellow background color.
+
+25. Move the Image
+The objective is to write a JavaScript program that enables an image to move according to the direction
+specified by the arrow keys. The program must be able to recognize and respond to the input from the arrow
+keys, and accordingly, update the position of the image on the screen. The program should be able to handle
+the movement of the image in all directions, including up, down, left, and right, in a smooth and responsive
+manner. Have a look at the event key codes before starting the project.
+
